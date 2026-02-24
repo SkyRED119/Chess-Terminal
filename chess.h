@@ -91,4 +91,15 @@ void whitePawnSelected(char board[BOARD_HEIGHT][BOARD_WIDTH], short pos_x, short
 
 void blackPawnSelected(char board[BOARD_HEIGHT][BOARD_WIDTH], short pos_x, short pos_y);
 
+void knightSelected(char board[BOARD_HEIGHT][BOARD_WIDTH], short pos_x, short pos_y, char side);
+
+void bishopSelected(char board[BOARD_HEIGHT][BOARD_WIDTH], short pos_x, short pos_y);
+
+void rookSelected(char board[BOARD_HEIGHT][BOARD_WIDTH], short pos_x, short pos_y);
+
+void queenSelected(char board[BOARD_HEIGHT][BOARD_WIDTH], short pos_x, short pos_y);
+
+void kingSelected(char board[BOARD_HEIGHT][BOARD_WIDTH], short pos_x, short pos_y);
+
+
 #endif

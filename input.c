@@ -28,6 +28,7 @@ char select_square(char board[BOARD_HEIGHT][BOARD_WIDTH], short pos_x, short pos
             case 'p':
                 board[pos_y][pos_x] = *current_piece;
                 board[pos_y-1][pos_x] = EMPTY_SQUARE;
+                break;
         }
     }
     else { // Selecting a new piece
@@ -45,6 +46,12 @@ char select_square(char board[BOARD_HEIGHT][BOARD_WIDTH], short pos_x, short pos
                 break;
             case 'p':
                 blackPawnSelected(board, pos_x, pos_y);
+                break;
+            case 'n':
+                knightSelected(board, pos_x, pos_y, 'n');
+                break;
+            case 'N':
+                knightSelected(board, pos_x, pos_y, 'N');
                 break;
         }
     }
